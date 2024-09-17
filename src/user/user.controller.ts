@@ -10,6 +10,9 @@ export class UserController {
 
     @Post()
     async createUser(@Body() createUser: CreateUserDto) {
-            return createUser;
+            return {
+                ...createUser,
+                password: undefined
+            };
     }
 }
