@@ -13,7 +13,7 @@ export class UserController {
   }
 
   @Get()
-  async getAllUsers(): Promise<UserEntity[]> {
-    return this.userService.getAllUsers();
+  async getAllUser(): Promise<UserEntity[]> {
+    return this.userService.getAllUser();
   }
 }
